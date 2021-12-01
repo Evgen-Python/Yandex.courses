@@ -1,0 +1,92 @@
+import pandas
+data = pandas.read_csv('polomki.csv', index_col='Магазин')
+data['Неделя 14'] = data['Неделя 14'] * 100
+import seaborn
+seaborn.heatmap(data)
+
+import pandas as pd
+
+
+for index in range(len(data)):
+
+
+print()
+
+append()
+
+for value in :
+    print()
+
+range(len())
+
+
+а = 0.2 + 0.1
+b = 0.3
+print(a == b)
+
+apples = 'яблоки'
+bananas = 'бананы'
+print(apples > bananas)
+
+elif ('адрес' in client_message):# добавьте условия для адреса
+    moscow_in_message = ('Москв' in client_message or
+                            'мск' in client_message)
+    piter_in_message = ('Петербург' in client_message or
+                           'Питер' in client_message)
+    city_is_not_mentioned = (not (moscow_in_message or piter_in_message))
+    if piter_in_message:
+        print('Санкт-Петербург, Пискарёвский проспект, 2, корп. 2')
+    elif moscow_in_message:
+        print('Москва, ул. Льва Толстого, 16')
+    elif city_is_not_mentioned:
+        print('Москва, ул. Льва Толстого, 16')
+        print('Санкт-Петербург, Пискарёвский проспект, 2, корп. 2')
+
+
+if moscow_in_message or city_is_not_mentioned:
+        print('Москва, ул. Льва Толстого, 16')
+    if piter_in_message or city_is_not_mentioned:
+        print('Санкт-Петербург, Пискарёвский проспект, 2, корп. 2')
+
+
+
+
+yield_usa = []
+
+for index in range(len(production_usa)):
+    yield_usa.append(production_usa[index] / acres_usa[index])
+    
+predict_acres = []
+
+for index in range(1, len(acres_usa)):
+    predict_acres.append(acres_usa[index] * yield_usa[index - 1])
+    
+predict_yield = []
+
+for index in range(1, len(acres_usa)):
+    predict_yield.append(acres_usa[index - 1] * yield_usa[index])
+
+
+
+
+error_yield = []
+for index in range(1, len(acres_usa)):
+    error_yield.append(production_usa[index] - acres_usa[index - 1] * yield_usa[index])
+    
+import seaborn
+seaborn.barplot(x=years[1:], y=error_yield)
+
+
+
+error_acres = []
+for index in range(1, len(acres_usa)):
+    error_acres.append(production_usa[index] - acres_usa[index] * yield_usa[index - 1])
+import seaborn
+seaborn.barplot(x=years_numbers[1:], y=error_acres)
+
+
+
+
+
+exo_small_14 = exoplanet[exoplanet['radius'] < 1]
+exo_small_14 = exo_small_14[exo_small_14['discovered'] == 2014]
